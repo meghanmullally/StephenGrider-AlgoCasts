@@ -7,17 +7,7 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-
-    // SOLUTION #3
-    // reduce to condense down to 1 single string value
-    // reduce takes 2 arguments 
-    return str.split('').reduce((rev, char) =>   char + rev, '');
-        // function runs 1 time for every element
-
-        // instead of 1 liner 
-        // return str.split('').reduce((rev, char) =>   {return char + rev, ''});
-
-
+return str.split('').reduce((rev, char) => char + rev, '');
 }
 
 module.exports = reverse;
@@ -41,3 +31,13 @@ module.exports = reverse;
 //     }
 
 //     return reversed;
+
+
+// SOLUTION #3
+// reduce to condense down to 1 single string value
+// reduce takes 2 arguments
+// return str.split('').reduce((rev, char) =>   char + rev, '');
+// function runs 1 time for every element
+
+// instead of 1 liner
+// return str.split('').reduce((rev, char) =>   {return char + rev, ''});
